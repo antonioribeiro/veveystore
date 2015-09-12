@@ -144,6 +144,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        PragmaRX\Sdk\EagerServiceProvider::class,
+        PragmaRX\Sdk\LazyServiceProvider::class,
     ],
 
     /*
