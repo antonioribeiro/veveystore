@@ -54,6 +54,7 @@ return [
 		'Services/Notifications',
 
 		'Services/Passwords',
+		'Services/Products',
 		'Services/Profiles',
 
 		'Services/Registration',
