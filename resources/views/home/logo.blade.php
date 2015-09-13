@@ -1,6 +1,6 @@
 <div class="span4">
     <p class="logo">
-        <img src="/assets/img/vevey-flag-90.png" alt=""> Vevey Store
+        <a href="/"><img src="/assets/img/vevey-flag-90.png" alt=""> Vevey Store</a>
     </p>
 </div>
 

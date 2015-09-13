@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\Users\Data\Repositories\User as UserRepository;
+use PragmaRX\Sdk\Services\Users\Data\Contracts\UserRepository as UserRepositoryContract;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+	    $this->app->bind(UserRepositoryContract::class, UserRepository::class);
     }
 }

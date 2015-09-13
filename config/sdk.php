@@ -114,6 +114,15 @@ return [
 		],
 
 		[
+			'name' => 'pragmarx/sdk/registration',
+			'enabled' => true,
+			'serviceProviders' => ['PragmaRX\Sdk\Services\Registration\Service\Provider'],
+			'facades' => [
+				'Registration' => 'PragmaRX\Sdk\Services\Registration\Service\Facade',
+			]
+		],
+
+		[
 			'name' => 'pragmarx/sms',
 			'enabled' => true,
 			'serviceProviders' => ['PragmaRX\Sdk\Services\Sms\Service\Provider'],

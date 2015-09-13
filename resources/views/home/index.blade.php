@@ -1,19 +1,5 @@
-@extends('templates.686.layout')
+@extends('layouts.main')
 
-@section('main-container')
-    @include('home.top-menu')
-
-    <!-- Header -->
-
-    <div class="row">
-        @include('home.logo')
-
-        @include('home.cart')
-    </div>
-
-    @include('home.products-menu')
-
+@section('contents')
     @include('products.listing')
-
-    @include('home.footer')
 @stop

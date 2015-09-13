@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+use App\Services\Users\Data\Entities\User;
+
+Route::get('/', ['as' => 'home', function ()
+{
     return view('home.index');
+}]);
+
+Route::get('email', function()
+{
+	$user = User::first();
+
+	$repo = app()->make(\App\Services\Users\Data\Repositories\User::class);
+
+	$repo->sendEmail(
+		$user,
+		'emails.register.user-registered',
+		t('captions.activate-your-account')
+	);
 });
