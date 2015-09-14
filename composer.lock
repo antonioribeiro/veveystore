@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e867190de5c3c79c5872ecfda9149501",
+    "hash": "2f6f8511ba55e98b53ea5ead95446971",
     "packages": [
         {
             "name": "cartalyst/sentinel",
@@ -926,12 +926,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jenssegers/laravel-date.git",
-                "reference": "4a5ecdc2e622ccf426e058a28449f06cc5d9200b"
+                "reference": "d90f1f9f184638bda2dc53a970b67d62aaa2eadb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/laravel-date/zipball/4a5ecdc2e622ccf426e058a28449f06cc5d9200b",
-                "reference": "4a5ecdc2e622ccf426e058a28449f06cc5d9200b",
+                "url": "https://api.github.com/repos/jenssegers/laravel-date/zipball/d90f1f9f184638bda2dc53a970b67d62aaa2eadb",
+                "reference": "d90f1f9f184638bda2dc53a970b67d62aaa2eadb",
                 "shasum": ""
             },
             "require": {
@@ -974,7 +974,7 @@
                 "time",
                 "translation"
             ],
-            "time": "2015-08-10 11:19:08"
+            "time": "2015-09-14 08:20:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -1040,12 +1040,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0c2618aca58053f671745df6cf8cabe5203f35a8"
+                "reference": "076b313c6df6c74a8809c1ee56e93a3705e83624"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0c2618aca58053f671745df6cf8cabe5203f35a8",
-                "reference": "0c2618aca58053f671745df6cf8cabe5203f35a8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/076b313c6df6c74a8809c1ee56e93a3705e83624",
+                "reference": "076b313c6df6c74a8809c1ee56e93a3705e83624",
                 "shasum": ""
             },
             "require": {
@@ -1160,7 +1160,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-09-12 19:50:40"
+            "time": "2015-09-14 09:09:45"
         },
         {
             "name": "laravel/socialite",
@@ -1222,12 +1222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "ebe614b77b283d7e31f87e31857ec76fd8453532"
+                "reference": "9319db5e2b4e7d70945bf7893cf162b03bb9ecb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/ebe614b77b283d7e31f87e31857ec76fd8453532",
-                "reference": "ebe614b77b283d7e31f87e31857ec76fd8453532",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/9319db5e2b4e7d70945bf7893cf162b03bb9ecb5",
+                "reference": "9319db5e2b4e7d70945bf7893cf162b03bb9ecb5",
                 "shasum": ""
             },
             "require": {
@@ -1239,8 +1239,8 @@
             },
             "require-dev": {
                 "erusev/parsedown": "~1.0",
-                "jgm/commonmark": "0.21",
-                "jgm/smartpunct": "0.21",
+                "jgm/commonmark": "0.22",
+                "jgm/smartpunct": "0.22",
                 "michelf/php-markdown": "~1.4",
                 "phpunit/phpunit": "~4.3",
                 "phpunit/phpunit-mock-objects": "2.3.0",
@@ -1276,7 +1276,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2015-08-28 16:16:07"
+            "time": "2015-09-14 02:05:30"
         },
         {
             "name": "league/flysystem",
@@ -1800,16 +1800,16 @@
         },
         {
             "name": "pragmarx/glottos",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/glottos.git",
-                "reference": "7fe975c595e230b350ec21a079f582160827c7c4"
+                "reference": "407ba451c55fdf5762959df297c4444fa73aa419"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/glottos/zipball/7fe975c595e230b350ec21a079f582160827c7c4",
-                "reference": "7fe975c595e230b350ec21a079f582160827c7c4",
+                "url": "https://api.github.com/repos/antonioribeiro/glottos/zipball/407ba451c55fdf5762959df297c4444fa73aa419",
+                "reference": "407ba451c55fdf5762959df297c4444fa73aa419",
                 "shasum": ""
             },
             "require": {
@@ -1836,9 +1836,6 @@
                 }
             },
             "autoload": {
-                "classmap": [
-                    "src/migrations"
-                ],
                 "psr-4": {
                     "PragmaRX\\Glottos\\": "src/"
                 },
@@ -1863,7 +1860,7 @@
                 "localization",
                 "translation"
             ],
-            "time": "2015-02-21 20:16:41"
+            "time": "2015-09-14 02:44:03"
         },
         {
             "name": "pragmarx/google2fa",
@@ -1923,12 +1920,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/sdk.git",
-                "reference": "5148360dc03b867cc982cb05e8560701e5809e2c"
+                "reference": "0733eecf00064ddbb626edcfd353c8e51824716a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/sdk/zipball/5148360dc03b867cc982cb05e8560701e5809e2c",
-                "reference": "5148360dc03b867cc982cb05e8560701e5809e2c",
+                "url": "https://api.github.com/repos/antonioribeiro/sdk/zipball/0733eecf00064ddbb626edcfd353c8e51824716a",
+                "reference": "0733eecf00064ddbb626edcfd353c8e51824716a",
                 "shasum": ""
             },
             "require": {
@@ -1981,7 +1978,7 @@
                 "source": "https://github.com/antonioribeiro/sdk/tree/master",
                 "issues": "https://github.com/antonioribeiro/sdk/issues"
             },
-            "time": "2015-09-12 22:29:49"
+            "time": "2015-09-14 02:31:26"
         },
         {
             "name": "pragmarx/support",
@@ -2599,12 +2596,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "726bf9651d29f53243281d0b6418cfaa5e318281"
+                "reference": "c79c361bca8e5ada6a47603875a3c964d03b67b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/726bf9651d29f53243281d0b6418cfaa5e318281",
-                "reference": "726bf9651d29f53243281d0b6418cfaa5e318281",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/c79c361bca8e5ada6a47603875a3c964d03b67b1",
+                "reference": "c79c361bca8e5ada6a47603875a3c964d03b67b1",
                 "shasum": ""
             },
             "require": {
@@ -2646,7 +2643,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2015-08-29 11:12:16"
+            "time": "2015-09-14 08:41:38"
         },
         {
             "name": "symfony/dom-crawler",
@@ -2707,12 +2704,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "69b6037050614d129fee27e17951ec7968f6567e"
+                "reference": "e79162fa079bb559ddad17c58cf8b7ecbaffd9b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/69b6037050614d129fee27e17951ec7968f6567e",
-                "reference": "69b6037050614d129fee27e17951ec7968f6567e",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e79162fa079bb559ddad17c58cf8b7ecbaffd9b6",
+                "reference": "e79162fa079bb559ddad17c58cf8b7ecbaffd9b6",
                 "shasum": ""
             },
             "require": {
@@ -2757,7 +2754,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-09 18:05:45"
+            "time": "2015-09-14 06:10:06"
         },
         {
             "name": "symfony/filesystem",
@@ -3486,12 +3483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "4d1acafbfc49d0d4dcce327971fd69fdec5df7a4"
+                "reference": "bedaf7d2fbb3ed8afb21e2f4b5f9209cac1fcdc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/4d1acafbfc49d0d4dcce327971fd69fdec5df7a4",
-                "reference": "4d1acafbfc49d0d4dcce327971fd69fdec5df7a4",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/bedaf7d2fbb3ed8afb21e2f4b5f9209cac1fcdc6",
+                "reference": "bedaf7d2fbb3ed8afb21e2f4b5f9209cac1fcdc6",
                 "shasum": ""
             },
             "require": {
@@ -3528,7 +3525,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-09-08 07:07:45"
+            "time": "2015-09-14 08:38:09"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -3866,12 +3863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "ab2283bf4a836d7f2ec5f33c15d6802d9f4cb512"
+                "reference": "ef1ca6835468857944d5c3b48fa503d5554cff2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ab2283bf4a836d7f2ec5f33c15d6802d9f4cb512",
-                "reference": "ab2283bf4a836d7f2ec5f33c15d6802d9f4cb512",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ef1ca6835468857944d5c3b48fa503d5554cff2f",
+                "reference": "ef1ca6835468857944d5c3b48fa503d5554cff2f",
                 "shasum": ""
             },
             "require": {
@@ -3920,7 +3917,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-09-01 12:25:27"
+            "time": "2015-09-14 06:51:16"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4106,12 +4103,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "473776571bfcdcf416faca4d31f52c4e5740a9c2"
+                "reference": "dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/473776571bfcdcf416faca4d31f52c4e5740a9c2",
-                "reference": "473776571bfcdcf416faca4d31f52c4e5740a9c2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa",
+                "reference": "dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa",
                 "shasum": ""
             },
             "require": {
@@ -4170,7 +4167,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-09-05 08:36:58"
+            "time": "2015-09-14 06:57:22"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
