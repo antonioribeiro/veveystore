@@ -30,3 +30,27 @@ Route::get('email', function()
 		t('captions.activate-your-account')
 	);
 });
+
+Route::group(['middleware' => 'auth', 'prefix' => 'beta'], function()
+{
+	Route::group(['namespace' => 'App\Services\Home\Http\Controllers'], function()
+	{
+		Route::get('/', ['as' => 'home', 'uses' => 'Home@index']);
+	});
+
+	Route::group(['namespace' => 'App\Services\Admin\Http\Controllers', 'prefix' => 'admin'], function()
+	{
+		Route::get('/', ['as' => 'admin.home', 'uses' => 'Admin@index']);
+
+		Route::group(['prefix' => 'clipping'], function()
+		{
+			Route::get('create', ['as' => 'admin.clipping.create', 'uses' => 'Clipping@create']);
+
+			Route::post('store', ['as' => 'admin.clipping.store', 'uses' => 'Clipping@store']);
+			Route::post('store/validate', ['as' => 'admin.clipping.store.validate', 'uses' => 'Clipping@storeValidate']);
+
+			Route::get('edit', ['as' => 'admin.clipping.edit', 'uses' => 'Clipping@edit']);
+			Route::get('delete', ['as' => 'admin.clipping.delete', 'uses' => 'Clipping@delete']);
+		});
+	});
+});
