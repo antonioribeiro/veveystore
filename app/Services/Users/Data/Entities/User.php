@@ -15,3 +15,5 @@ class User extends SdkUserModel implements AuthenticatableContract, CanResetPass
 	protected $presenter = 'App\Services\Users\Data\Presenters\User';
 
 }
+
+

@@ -54,10 +54,12 @@ return [
 		'Services/Notifications',
 
 		'Services/Passwords',
+		'Services/Permissions',
 		'Services/Products',
 		'Services/Profiles',
 
 		'Services/Registration',
+		'Services/Roles',
 
 		'Services/Settings',
 		'Services/Sms',

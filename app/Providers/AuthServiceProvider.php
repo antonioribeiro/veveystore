@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use PragmaRX\Sdk\Services\Permissions\Data\Entities\Permission;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
 	 * @var array
 	 */
 	protected $policies = [
-		'App\Model' => 'App\Policies\ModelPolicy',
+		'App\Services\Admin\Policies\Admin' => 'App\Services\Admin\Policies\Admin',
 	];
 
 	/**
@@ -26,6 +27,16 @@ class AuthServiceProvider extends ServiceProvider
 	{
 		parent::registerPolicies($gate);
 
-		//
+		foreach ($this->getPermissions() as $permission)
+		{
+			$gate->define($permission->name, function($user) use ($permission) {
+				return $user->hasRole($permission->roles);
+			});
+		}
+	}
+
+	private function getPermissions()
+	{
+		return Permission::with('roles')->get();
 	}
 }
