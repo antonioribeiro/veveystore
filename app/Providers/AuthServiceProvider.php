@@ -40,3 +40,4 @@ class AuthServiceProvider extends ServiceProvider
 		return Permission::with('roles')->get();
 	}
 }
+http://alerjapi.antoniocarlosribeiro.com/api/v1.0/schedule?callback=fcallback
