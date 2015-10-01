@@ -52,7 +52,7 @@
                     <a href="{{ route('home') }}"><i class="fa fa-home fa-fw"></i> Site Principal</a>
                 </li>
                 <li>
-                    <a href="{{ route('admin.home') }}"><i class="fa fa-dashboard fa-fw"></i> Clipping</a>
+                    <a href="{{ route('admin.products') }}"><i class="fa fa-dashboard fa-fw"></i> Produtos</a>
                 </li>
             </ul>
         </div>
