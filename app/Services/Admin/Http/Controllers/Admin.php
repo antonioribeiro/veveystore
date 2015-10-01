@@ -7,7 +7,7 @@ use App\Services\Admin\Http\Requests\Show;
 
 class Admin extends Controller
 {
-	public function index()//Show $request)
+	public function index(Show $request)
 	{
 		return view('admin.index');
     }
