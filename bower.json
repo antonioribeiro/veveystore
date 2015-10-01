@@ -1,0 +1,13 @@
+{
+  "name": "Adolpho Konder",
+  "dependencies": {
+    "startbootstrap-sb-admin-2": "~1.0.7",
+    "dropzone": "~4.0.1",
+    "autosize": "~3.0.8",
+    "react": "~0.13.3",
+    "summernote": "~0.6.13",
+    "bootstrap-3-datepicker": "~1.4.0",
+    "select2": "~4.0.0",
+    "raty": "~2.7.0"
+  }
+}
