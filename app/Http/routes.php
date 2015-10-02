@@ -13,7 +13,7 @@ Route::group(['middleware' => 'auth'], function()
 
 		Route::group(['prefix' => 'products'], function()
 		{
-			Route::get('edit', ['as' => 'admin.products', 'uses' => 'Product@index']);
+			Route::get('/', ['as' => 'admin.products', 'uses' => 'Products@index']);
 		});
 	});
 });
