@@ -8,8 +8,5 @@ use PragmaRX\Sdk\Core\Validation\FormRequest;
 
 class Show extends FormRequest
 {
-	public function authorize()
-	{
-		$this->authorize('show', new Admin());
-	}
+	public $ability = Admin::class;
 }
