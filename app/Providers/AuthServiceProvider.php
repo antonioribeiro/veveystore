@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 use PragmaRX\Sdk\Services\Permissions\Data\Entities\Permission;
 
 class AuthServiceProvider extends ServiceProvider
@@ -37,6 +38,11 @@ class AuthServiceProvider extends ServiceProvider
 
 	private function getPermissions()
 	{
+		if ( ! Schema::hasTable('permissions'))
+		{
+			return [];
+		}
+
 		return Permission::with('roles')->get();
 	}
 }
