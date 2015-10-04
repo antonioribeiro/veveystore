@@ -36,6 +36,7 @@ return [
 		'Services/Currencies',
 
 		'Services/EmailChanges',
+		'Services/ExceptionHandler',
 
 		'Services/Files',
 		'Services/Firewall',

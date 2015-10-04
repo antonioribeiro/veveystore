@@ -8,5 +8,12 @@ use PragmaRX\Sdk\Core\Validation\FormRequest;
 
 class Show extends FormRequest
 {
-	public $ability = Admin::class;
+	public function authorize()
+	{
+		if (Gate::denies('show', new Admin())) {
+			abort(403);
+		}
+
+		return true;
+	}
 }

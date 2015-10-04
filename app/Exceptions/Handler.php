@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use PragmaRX\Sdk\Services\ExceptionHandler\Service\Facade as SdkExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
@@ -42,10 +43,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof ModelNotFoundException) {
-            $e = new NotFoundHttpException($e->getMessage(), $e);
-        }
+	    if ($result = SdkExceptionHandler::handle($e))
+	    {
+		    return $result;
+	    }
 
-        return parent::render($request, $e);
+	    return parent::render($request, $e);
     }
 }
