@@ -9,6 +9,11 @@ class Products extends Controller
 {
 	public function index(Show $request)
 	{
-		return view('admin.index');
+		return view('admin.products.index');
     }
+
+	public function create()
+	{
+		return view('admin.products.create');
+	}
 }
