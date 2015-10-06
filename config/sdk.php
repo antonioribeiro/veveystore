@@ -126,6 +126,13 @@ return [
 		],
 
 		[
+			'name' => 'pragmarx/sdk/bus',
+			'enabled' => true,
+			'serviceProviders' => ['PragmaRX\Sdk\Services\Bus\Service\Provider'],
+			'facades' => []
+		],
+
+		[
 			'name' => 'pragmarx/sms',
 			'enabled' => true,
 			'serviceProviders' => ['PragmaRX\Sdk\Services\Sms\Service\Provider'],
@@ -209,7 +216,8 @@ return [
 			'enabled' => true,
 			'serviceProviders' => ['PragmaRX\Sdk\Services\Form\Service\Provider'],
 			'facades' => [
-				'Form' => 'PragmaRX\Sdk\Services\Form\Service\Facade', /// overrides the Laravel Facade
+				'Form' => 'PragmaRX\Sdk\Services\Form\Service\FormFacade',
+				'Html' => 'PragmaRX\Sdk\Services\Form\Service\HtmlFacade',
 			]
 		],
 

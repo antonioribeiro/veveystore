@@ -10,6 +10,7 @@ Route::group(['middleware' => 'auth'], function()
 		{
 			Route::get('/', ['as' => 'admin.products', 'uses' => 'Products@index']);
 			Route::get('create', ['as' => 'admin.products.create', 'uses' => 'Products@create']);
+			Route::post('store', ['as' => 'admin.products.store', 'uses' => 'Products@store']);
 		});
 	});
 });

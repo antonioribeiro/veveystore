@@ -8,7 +8,7 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
         "pragmarx/sdk": "master",
-        "illuminate/html": "^5.0",
+        "laravelcollective/html": "~5.0",
         "laravel/socialite": "^3.0@dev",
         "gloudemans/shoppingcart": "~1.3"
     },
