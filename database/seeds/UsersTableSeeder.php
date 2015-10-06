@@ -29,6 +29,7 @@ class UsersTableSeeder extends Seeder {
 	         'two_factor_google_secret_key' => '4CMLW2FWIOEUTY2HACIUPGNGGSCXPBES',
 	         'two_factor_sms_secret_key' => '4CMLW2FWIOEUTY2HACIUPGNGGSCXPBES',
 	         'two_factor_email_secret_key' => '4CMLW2FWIOEUTY2HACIUPGNGGSCXPBES',
+		     'is_admin' => true
         ]);
 
 		UserActivation::create(

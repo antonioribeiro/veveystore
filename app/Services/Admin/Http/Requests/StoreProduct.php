@@ -15,6 +15,9 @@ class StoreProduct extends FormRequest
 			'cost' => 'required',
 			'price' => 'required',
 			'stock' => 'required',
+			'brand_id' => 'required',
+			'category_id' => 'required',
+			'unit_id' => 'required',
 		];
 	}
 }

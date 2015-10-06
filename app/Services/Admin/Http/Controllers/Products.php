@@ -3,6 +3,7 @@
 namespace App\Services\Admin\Http\Controllers;
 
 use Auth;
+use Flash;
 use App\Http\Controllers\Controller;
 use App\Services\Admin\Http\Requests\Show;
 use PragmaRX\Sdk\Services\Products\Commands\AddProduct;
