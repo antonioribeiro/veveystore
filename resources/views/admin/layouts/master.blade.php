@@ -98,7 +98,7 @@
     <!-- Dropzone -->
     <script src="{{url('/')}}/vendor/dropzone/dist/dropzone.js"></script>
     <script>
-        Dropzone.autoDiscover = false;
+        Dropzone.autoDiscover = true;
     </script>
 
     <!-- autosize -->

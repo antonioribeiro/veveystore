@@ -21,5 +21,6 @@
   },
   "_source": "git://github.com/enyo/dropzone.git",
   "_target": "~4.0.1",
-  "_originalSource": "dropzone"
+  "_originalSource": "dropzone",
+  "_direct": true
 }

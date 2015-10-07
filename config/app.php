@@ -6,6 +6,10 @@ return [
 
     'name' => 'Vevey Store',
 
+    'upload_root' => public_path('files'),
+
+    'upload_relative_path' => 'uploaded',
+
     'register' => [
 	    'username' => false,
         'last_name' => false,

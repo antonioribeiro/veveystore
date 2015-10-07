@@ -55,7 +55,16 @@
                             </div>
                         </div>
 
+                        <div id="dropzoneContent"></div>
+                        <br>
+
                         <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Gravar</button>
+                    {!! Form::close() !!}
+
+                    {!! Form::open(['route' => 'api.upload.file', 'id' => 'dropzoneForm', 'class' => 'dropzone']) !!}
+                        <div class="fallback">
+                            <input name="fileUpload" id="fileUpload" type="file" multiple />
+                        </div>
                     {!! Form::close() !!}
                 </div>
                 <!-- /.panel-body -->
@@ -67,5 +76,9 @@
 @stop
 
 @section('javascript')
+    <script>
+        jQuery("#dropzoneForm").appendTo("#dropzoneContent");
 
+        @include('admin.products.partials.dropzonejs-config')
+    </script>
 @stop
