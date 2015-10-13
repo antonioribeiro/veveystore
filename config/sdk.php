@@ -27,6 +27,7 @@ return [
 		'Services/Block',
 		'Services/Bus',
 
+		'Services/Categories',
 		'Services/Cities',
 		'Services/Clients',
 		'Services/Clipping',

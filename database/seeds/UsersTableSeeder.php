@@ -25,7 +25,7 @@ class UsersTableSeeder extends Seeder {
 	         'last_name' => 'Ribeiro',
 	         'username' => 'antonioribeiro',
 	         'email'      => 'acr@antoniocarlosribeiro.com',
-	         'password'   => 'foda-se',
+	         'password'   => env('DB_PASSWORD'),
 	         'two_factor_google_secret_key' => '4CMLW2FWIOEUTY2HACIUPGNGGSCXPBES',
 	         'two_factor_sms_secret_key' => '4CMLW2FWIOEUTY2HACIUPGNGGSCXPBES',
 	         'two_factor_email_secret_key' => '4CMLW2FWIOEUTY2HACIUPGNGGSCXPBES',
